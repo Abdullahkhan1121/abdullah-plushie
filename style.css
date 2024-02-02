@@ -8,6 +8,7 @@
 #hoe:hover{
     transition: 1s;
     font-size: large;
+    color: black;
 }
 #ho{
     color: black;
@@ -79,4 +80,32 @@
   .swiper-slide:nth-child(10n) {
     background-color: rgb(54, 94, 77);
   }
-  
+
+  .dark-theme{
+    --background-color: #2d2d2d;
+    --text-color: #e7e3e3;
+    --title-color:#fff;
+}
+
+body{
+    background: var(--background-color);
+    color: var(--text-color);
+    transition: background 0.8s;
+
+}
+.toggle-btn{
+  background: black;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.toggle-btn img{
+  width: 25px;
+  margin-left: 10px;
+}
